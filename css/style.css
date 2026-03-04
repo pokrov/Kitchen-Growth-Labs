@@ -10,6 +10,10 @@
 * 	Template Style 
 *
 * ======================================================= */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Cormorant Garamond", Georgia, serif;
   font-weight: 500;
@@ -284,16 +288,17 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-header {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  right: 0;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   position: relative;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-header {
-    background-attachment: scroll;
-  }
+  box-sizing: border-box;
 }
 #fh5co-header .overlay {
   z-index: 0;
@@ -302,7 +307,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.62);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 @media screen and (max-width: 768px) {
